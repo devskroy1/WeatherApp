@@ -1,0 +1,18 @@
+var Candidates = new Array();
+
+    for(i=0; i<recipes.length; i++){
+           
+           if(recipes[i].name.includes(q in query)){
+Candidates.push(recipes[i]);
+
+}
+    }
+var NumberMatches = new Array();
+for(j=0; j< Candidates.length;j++){
+NumberMatches.push(Candidates[j].name.match(q in query).length)
+}
+NumberMatches.sort(function(a, b){return b-a});
+var Rank = new Array();
+for (k=0; k<NumberMatches.length; k++) {
+Rank.push(NumberMatches[k].Ca
+}
