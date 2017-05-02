@@ -1,0 +1,46 @@
+var recipes = ["pesto pasta", "chicken coronation", "pizza margherita"]
+
+pesto pasta{
+           name: "Pesto Pasta"
+           steps: [{keyword: "boil", text : "boil in 200 mL water for 10 mins"}, {keyword: "simmer", text : "simmer in 200 mL water for 10 mins"}]
+}
+
+chicken coronation{
+           name: 
+           steps:
+}
+
+pizza margherita{
+           name:
+           steps:
+}
+var Candidates = new Array();
+var MatchQueries = new Array();
+    for(i=0; i<recipes.length; i++){
+           if(recipes[i].name.includes(q in query)){
+Candidates.push(recipes[i])
+MatchQueries.push(recipes[i].name.match(q));
+OR
+MatchQueries[i] = recipes[i].name.match(q);
+}
+    }
+var Rank = new Array();
+for (j=0; j< MatchQueries.length; j++) {
+Rank.push(MatchQueries[j].length);
+}
+Rank.sort(function(a, b){return b-a});
+   if (Candidates.size === 0){
+    for(i=0; i<recipes.length; i++){
+      if(recipes[i].steps["keyword"].includes(q in query)){
+
+      print(recipes[i].steps)
+     }
+    }
+  }
+var query = ["boil", "Pesto", "Pasta"]
+## q. for Michael: the request is case sensitive right? 
+// need semi-colons for JavaScript
+// use includes() function in line 19 instead: if(recipes[i].name.includes(q in query))
+//old version :  if (recipes[i].name in query) {
+            Candidates.push(recipes[i])
+           }
