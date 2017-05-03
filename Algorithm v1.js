@@ -20,6 +20,7 @@ function search(searchString){
 		return b.searchMatches - a.searchMatches;
 	});
 	var maxMatches = recipesToSearch[0].searchMatches;
+	if(maxMatches == 0) return [];
 	return recipesToSearch.filter(function(recipe){
 		return recipe.searchMatches == maxMatches;
 	});
